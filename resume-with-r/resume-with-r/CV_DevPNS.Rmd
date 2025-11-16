@@ -1,0 +1,365 @@
+---
+#name: Sourav
+surname: Sourav Sarker
+# position: "Software Engineer"
+# address: "[Secure Link Services Ltd, Dhaka, Bangladesh (SELISE)(https://selisegroup.com/)]"
+# address: "225/12 B, Pallabi, Mirpur-12, Dhaka-1216"
+email: "sourav39.dev@gmail.com"
+www: iamsourav.ml
+linkedin: sourav-sarker-6a9029b8
+location: Dhaka, Bangladesh
+github: po95
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv
+linkcolor: red
+urlcolor: red
+citecolor: red
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+library(kableExtra)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- \normalsize -->
+<!-- As a Bioinformatician with a strong background in biochemistry and molecular biology, I have expanded my expertise in computational biology by integrating advanced NGS technologies like Illumina and Nanopore. My work is driven by a commitment to leveraging computational and biological advances to explore the complexities of life. -->
+
+\footnotesize
+\vspace{.2mm} 
+
+Having a colorful footprint in software engineering spanning over four years, I have cultivated a robust skill set that includes clean coding, system design, settling R&Ds and debugging abilities; also, my commitment to problem-solving is demonstrated through successful project completions. Now, I am fueled by an unwavering passion for delving into challenging research topic which makes me an ideal candidate for contributing in.
+
+# Education
+\footnotesize
+\vspace{-2mm} 
+```{r education2}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Shahjalal University of Science and Technology(SUST)", "Bachelor of Science in Biochemistry and Molecular Biology", "2016-2019", "Sylhet, Bangladesh",
+    list(
+      paste0("CGPA: 3.36 out of 4.00\\\\",
+             "\\hspace*{-0.28cm}•\\,\\, Project (2019): Prediction of Missing DNA Methylation from Whole Genome Bisulfite Data Using KNN\\\\",
+             "\\hspace*{0.020cm}∙ Advisor: Rashedul Islam - PhD in Bioinformatics - University of British Columbia, Canada")
+    ),
+) %>%
+  detailed_entries(degree, dates, uni, loc, details)
+```
+\vspace{2mm} 
+# Research Experiences
+\footnotesize
+\vspace{-2.4mm} 
+
+```{r professional_experience}
+tribble(
+  ~ role, ~ organization, ~ loc, ~ dates, ~ responsibilities,
+  "Research Officer, Bioinformatician - Genomics Team ", "Child Health Research Foundation", "Dhaka, Bangladesh", "01 Aug 2022 - Present",
+    list(
+      paste0("CZI A Global Pediatric Cell Atlas of Nasal and Oral Mucosa.\\\\",
+             "\\hspace*{0.5cm}- Single cell isolation, Single cell capture, Whole transcriptomic amplification, Library preparation using HoneyComb, 10x Genomics, Parse Biosciences and loading on NextSeq2000.\\\\",
+             "\\hspace*{0.5cm}- Computational analysis using Scanpy and Seurat.\\\\",
+             "\\hspace*{0.020cm}∙ Training: From the team members of Ordovas-Montanes Lab, Assistant Professor Harvard Medical School.\\\\",
+             "\\hspace*{0.020cm}∙ Workshop: Attented 2024 HCA Single‐Cell Omics in‐person Computational and Experimental Design Workshop, Bangkok, Thailand\\\\",
+             "\\hspace*{0.020cm}∙ Collaboration: Ordovas-Montañes Lab - Boston Childrens Hospital, MIT\\\\",
+             "\\hspace*{-0.28cm}•\\,\\, A computational framework to automatically interpret pediatric chest X-rays and diagnose pneumonia.\\\\",
+             "\\hspace*{0.5cm}- Model development using CNN and Pytorch.\\\\",
+             "\\hspace*{0.020cm}∙ Funded by: NIHR Global Health Research Unit on Respiratory Health\\\\",
+             
+             "\\hspace*{-0.28cm}•\\,\\, Parv4 detection in children with suspected meningitis is associated with high mortality.\\\\",
+             "\\hspace*{0.5cm}- Metagenomics analysis—consensus sequence generated using CZ ID, mapping, MAFFT, RAxML, and annotation.\\\\",
+             "\\hspace*{-0.28cm}•\\,\\, Global Pneumococcal Sequencing Project.\\\\",
+             "\\hspace*{0.5cm}- Development of Nextflow workflow.\\\\",
+             "\\hspace*{0.020cm}∙ Advanced Bioinformatics Workshop developed for GPS and JUNO projects by Wellcome Sanger Institute in Bangalore, India.\\\\",
+             "\\hspace*{-0.28cm}•\\,\\, RSV Vaccine Impact Monte Carlo Simulation.\\\\",
+             "\\hspace*{0.5cm}- RSV vaccination mortality impact analysis via Monte Carlo simulation.\\\\",
+             "\\hspace*{0.020cm}∙ PI: Sudipta Saha - Harvard University")
+    ),
+  "Research Fellow", "National Gene Bank, National Institute of Biotechnology(NIB)", "Dhaka, Bangladesh", "5 Sept 2021 - 30 June 2022",
+    list(
+      paste0("Revealing the Disease complexity and Population Structure of Human Gut Microbiota from Diverse Cohort of Bangladesh Population.\\\\",
+             "\\hspace*{0.5cm}- Metagenomic analysis of 16s rRNA sequences using qiime2.")
+    ),
+)%>% 
+  detailed_entries(role, dates, organization, loc, responsibilities)
+
+```
+
+
+
+# Teaching Experience 
+\footnotesize
+\vspace{-3mm} 
+
+```{r teaching}
+tribble(
+  ~ role, ~ organization, ~ loc, ~ dates, ~ details,
+  "Teaching Assistant, Building Scientists for Bangladesh", "Child Health Research Foundation (CHRF)", "Dhaka, Bangladesh", "2023-2024",
+  
+    list(
+      paste0("Advanced Next Generation Sequencing\\\\", 
+             # "\\hspace*{0.020cm}∙ Topics Covered:\\\\",
+             "\\hspace*{0.5cm}- Linux OS, NGS Data Analysis: Quality checking, Quality filter, Genome Assembly, Genome Annotation\\\\", 
+             "\\hspace*{0.5cm}- Building Consensus using CZID, Sample Sheet Preparation for NextSeq2000\\\\",
+             "\\hspace*{-0.28cm}•\\,\\, Bacterial Genomics Antimicrobial Resistance\\\\", 
+             # "\\hspace*{0.020cm}∙ Topics Covered:\\\\",
+             "\\hspace*{0.5cm}- Linux OS, Bash Scripting Genome Assembly, Genome Mapping, Genome Annotation, Genome Submission, MLST Prediction\\\\",
+             "\\hspace*{-0.28cm}•\\,\\, AI in Public Health\\\\",
+             # "\\hspace*{0.020cm}∙ Topics Covered:\\\\", 
+             "\\hspace*{0.5cm}- Data cleaning and preprocessing, Data Visualization, Architecture of ML and DL Libraries- Numpy,Pandas, Keras,TensorFlow\\\\",
+             "\\hspace*{0.5cm}- Dengue prediction in Puerto Rico using LSTM and ARIMA\\\\",
+             "\\hspace*{0.5cm}- Predicting Pneumonia in X-rays using CNN\\\\",
+             "\\hspace*{0.5cm}- Advanced Modeling Techniques- PyCaret, GRU\\\\",
+             "\\hspace*{0.020cm}∙ Supported from the Bill and Melinda Gates foundation, through the Democratizing Public Health Modeling Using AI-based Tools")
+    ),
+  "Instructor, Bioinformatics Division", "Bioinformatics Division, National Institute of Biotechnology (NIB)", "Dhaka, Bangladesh", "2021",
+    list(
+      paste0("Delivered training on Bioinformatics for Biotechnology Research\\\\",
+             # "\\hspace*{0.020cm}∙ Topics covered:\\\\",
+             "\\hspace*{0.5cm}- Linux OS, Bash Scripting and Biopython for NGS Data Analysis")
+    ),
+) %>%
+  detailed_entries(role, dates, organization, loc, details)
+```
+
+
+
+# Technical Skills
+\footnotesize
+\vspace{-4mm} 
+- **Languages:** Bash, Python, C, R, Nextflow, Java
+- **Database Management Systems:** SQL, Redis, SQLite3
+<!-- - **Web Development:** Quarto®,Django -->
+- **Machine Learning and Deep Learning:** Proficient in various frameworks and techniques: Numpy, Pandas, Matplotlib, Seaborn, Keras, SciKit-Learn, TensorFlow, PyTorch
+- **Bioinformatics:** 
+  - Proficient in Docker for pipeline buildup.
+  - Microarray and Bulk RNA sequencing Analysis using DESeq2, stats, ggplot, corrplot, pheatmap, EDASeq, gProfileR
+  - Genome quality checking and assembly: **Illumina:-** BCL2fastq, fastQC, MultiQC, Quast, Trimmomatic, fastp, Unicycler, Spades, Megahit; **Nanopore:-** fast52fasta, Pilon, Flye
+  - Genome annotation: Kraken2 , Prokka, Seroba, AMRFinderPlus, Abricat, SRST, MLST, Snippy, Mafft, fasta2phylip, Raxml-ng, Poppunk, PlasmidFinder, ResFinder
+  - Molecular Dynamics Simulation using GROMACS.
+  - Metagenomics analysis using qiime2 and CZID.
+  - Nextstrain Built and maintained from Bangladesh for SARS-CoV-2.
+  - **Single Cell RNA sequencing Analysis using Scanpy and Seurat: Data pre-processing, Clustering and Cell annotation, Integration and Batch correction, Cell-cell communication, BCR background and 10x analysis, Trajectory inference, Differential abundance, Multiomic scATAC**
+  
+- **Wet Lab:** 
+  - Single Cell RNA sequencing Analysis using  HoneyComb, 10x Genomics, Parse
+Biosciences, Library preparation, Sequence on Illumina and Nanopore
+  - Molecular techniques: Conventional and Real-time PCR, DNA & RNA extraction, Agarose & Polyacrylamide Gel Electrophoresis and Imaging, Blotting techniques, Molecular cloning, ELISA & ICT
+  - Microbiological techniques: Culture, Biochemical test
+
+
+
+# Publications
+\footnotesize
+\vspace{-2.4mm} 
+
+**Dev,P.,C.,** Rehman,A., Hossain,M.,M., Kazi,E., Goswami,S., Rehman,H., Hooda,Y., Tanmoy,A.,M., Saha,S.,K., Saha, S. **Genomic epidemiology of Salmonella Paratyphi B isolates from Bangladesh**.**(In-process)**
+
+\vspace{-1.3mm} 
+Debnath, J., P., Hossen,K., Khandaker,M., S., Sayed,S., B., **Dev, P., C.,*** Sarker, S.,* Hossain,T.* Influenza and Other Respiratory Viruses. **Decoding the Unique Gene Signatures Upon 2022 MPXV Infection: Predictive Biomarkers and Drug Targets via Transcriptomic Network Analysis and Machine Learning Models.****(Submitted)**
+
+\vspace{-1.3mm} 
+Islam,S., Kabiraj,R., Sarkar,H., **Dev,P.,C.,** Akter,A.T., Purna,D.K., Rajib,A.M., Mohammad,A.T., Kumar,S.S., Hooda,Y., Saha,S. Microbiology Resource Announcements: **Genome sequences of bacteriophages that infect Salmonella Typhi from Bangladesh.(Submitted)** 
+
+\vspace{-1.3mm} 
+Raju,R.,.S., Nahid,A.,A., **Dev,P.,C.,** Islam,R. **VirusTaxo: Taxonomic classification of viruses from the genome sequence using k-mer enrichment.** Genomics. 2022 Jul;114(4):110414. doi: 10.1016/j.ygeno.2022.110414. Epub 2022 Jun 17. PMID: 35718090.
+
+\vspace{-1.3mm} 
+Chowdhury,Z.,M., Bhattacharjee,A., Ahammad,I., Hossain,M.,U., Jaber,A.A., Rahman,A., **Dev,P.,C.,** Salimullah,M., Keya,C.,A. **Exploration of Streptococcus core genome to reveal druggable targets and novel therapeutics against S. pneumoniae.** PLoS One. 2022 Aug 18;17(8):e0272945. doi: 10.1371/journal.pone.0272945. PMID: 35980906; PMCID: PMC9387852.
+
+<!-- \vspace{-1.3mm}  -->
+<!-- Hasnat,M.,A., Niloy,F.,R., Ashik,A.,I., Hassan,M., **Dev,P.,C.,**, Panna,S.,S., Mia,M.,W., Hasan, Z. **Prevalence of hyperlipidemia in controlled and uncontrolled type-2 diabetic patients.** Journal of Advanced Biotechnology and Experimental Therapeutics. 2022 Jan; 5(1):247. doi: 10.5455/jabet.2022.d112 -->
+
+ 
+ 
+
+# Conference  Presentations
+\footnotesize
+\vspace{-2.4mm} 
+**Dev,P.,C.,*** Malaker, A.,R., Keya,D.,P., Hooda,Y., Saha,S., **Building a single-cell atlas of the nasopharyngeal mucosa to investigate SARS-CoV-2 infection**. 2024 HCA Single-Cell Omics in-person Computational and Experimental Design Workshop, Bangkok, Thailand. 
+
+\vspace{-1.3mm} 
+**Dev,P.,C.,*** Tanmoy,A.,M., Rahman,A., Saha,S.,K., Hooda,Y., Saha,S., **Paratype v1.1: recent updates to the genotyping tool for paratyphoid fever surveillance**. 13th International Conference on Typhoid and Other Invasive Salmonelloses, Kigali, Rwanda.
+
+<!-- \vspace{-1.3mm}  -->
+<!-- Rehman,A., **Dev,P.,C.,***, Hossain,M.,M., Kazi,E., Goswami,S., Rehman,H., Hooda,Y., Tanmoy,A.,M., Saha,S.,K., Saha, S. **Genomic epidemiology of Salmonella Paratyphi B isolates from Bangladesh**. 13th International Conference on Typhoid and Other Invasive Salmonelloses, Kigali, Rwanda. -->
+
+<!-- Chowdhury ZM, Bhattacharjee A, Ahammad I, Hossain MU, Jaber AA, Rahman A, **Chondrow Dev P**, Salimullah M, Keya CA. **Exploration of Streptococcus core genome to reveal druggable targets and novel therapeutics against S. pneumoniae**. Presented at the 2nd International Conference on Genomics, Nanotech, and Bioengineering-2022 (ICGNB-2022), North South University, Dhaka. -->
+
+
+
+
+             
+<!-- # Project -->
+<!-- For a complete list of projects see my  [**Github**](https://github.com/preonath) \faGithub -->
+<!-- ```{r project}  -->
+<!-- tribble( -->
+<!--   ~ role, ~ project_name, ~ loc, ~ dates, ~ details, -->
+
+<!--    "Computational analyst and AI model developer", "A Global Pediatric Cell Atlas of Nasal and Oral Mucosa", "CHRF, Dhaka, Bangladesh", "Present", -->
+<!--    list("Collaboration: Ordovas-Montañes Lab - Boston Childrens Hospital, MIT, Bill and Melinda Gates Foundation"), -->
+
+<!--    "AI Developer", "Paediatric pneumonia detection from X-ray images using deep learning", "CHRF, Dhaka, Bangladesh", "Present", -->
+<!--    list("Funded by: NIHR Global Health Research Unit on Respiratory Health"), -->
+
+<!--    "Bioinformatics analysis and development of pipeline", "Exploring diversity and environmental dynamics of Salmonella Typhi and its bacteriophages", "CHRF, Dhaka, Bangladesh", "Present", -->
+<!--    list("Collaboration: Stanford University School Medicine"), -->
+
+<!--    "AI Developer", "Predicting Disease Spread of Dengue using LSTM", "CHRF, Dhaka, Bangladesh", "Present", -->
+<!--    list("Competitions: DrivenData"), -->
+
+<!--    "Model Developer", "RSV Vaccine Impact Monte Carlo Simulation", "CHRF, Dhaka, Bangladesh", "Present", -->
+<!--    list("Collaboration: Sudipta Saha (PhD Student) - Population Health Sciences, Harvard University"), -->
+<!--    "Bioinformatics analysis and development of AI pipeline", -->
+<!--    "Prediction of Missing DNA Methylation fromWhole Genome Bisulfite Data Using KNN","Dhaka, Bangladesh","2019", -->
+<!--    list("Collaboration: Rashedul Islam - PhD in Bioinformatics - University of British Columbia, Canada") -->
+
+<!--  ) %>% -->
+<!--    detailed_entries(role, dates, project_name, loc, details) -->
+
+
+<!-- ```  -->
+
+
+<!-- # Courses -->
+<!-- For my courses and workshops visit my personal [**website**.](https://preonath.github.io/) -->
+
+<!-- ```{r workshops} -->
+<!-- tribble( -->
+<!--   ~ role, ~ course, ~ organisation, ~ country, ~ dates, ~ details, -->
+<!--   "Participant", "Introduction to Deep Learning in Python", "Datacamp", "Online", "AUG 04, 2021", "Participated in an online course focusing on the basics of deep learning using Python.", -->
+<!--   "Participant", "Introduction to R", "Datacamp", "Online", "JUL 27, 2021", "Completed an introductory course on the R programming language, covering fundamental concepts and applications." -->
+<!-- ) %>% -->
+<!--   brief_entries(glue::glue("\\textbf{<course>}: <role> (<organisation>, <country>)  \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE) -->
+
+<!-- ``` -->
+
+<!-- # Seminar -->
+
+<!-- ```{r seminar} -->
+<!-- tribble( -->
+<!--   ~ role, ~ organizer, ~ loc, ~ dates, ~ details, -->
+<!-- "Participant", "Human Cell Atlas and Wellcome Sanger Institute", "Virtual ", "2022-2024", -->
+<!--    list("\\vspace{1mm}HCA ASIA 2023 MEETING", -->
+<!--         "Focus on Technology: Advances in Spatial Omics", -->
+<!--         "Atlas Integration and CAP (Cell Annotation Platform)", -->
+<!--         "GPS and JUNO seminar"), -->
+<!-- ) %>% -->
+<!--   detailed_entries(role, dates, organizer, loc, details) -->
+
+<!-- ``` -->
+
+
+# Accomplishment
+\footnotesize
+\vspace{.2mm} 
+```{r accomplishment}
+tribble(
+  ~ award,  ~ organisation, ~ country, ~ dates, ~ details,
+  "6th Position from Bangladesh", "Rosalind", "SUST", "2018-2024", "Bioinformatics problem solving using Python.\\vspace{1.25mm}",
+  
+   "100+ Problem solved", "Leetcode",  "SUST","2022-2023", "Problem solving in competitive programming using Python.\\vspace{1.25mm}",
+  
+  "220 out of 13558", "DrivenData", "CHRFBD Datascience Team - Dhaka, Bangladesh", "2023-2024", "Predicting Disease Spread of Dengue using LSTM.\\vspace{1.25mm}",
+  
+  "Thesis Supervision", "Child Health Research Foundation (CHRF)", "Dhaka, Bangladesh", "2022-2024", "Assist \\textbf{4 students and 1 intern} with executing the bioinformatics pipeline for their projects.\\vspace{1.25mm}",
+  
+    "Academic Honor", " Dept. of Biochemistry and Molecular Biology(SUST)", "Sylhet, Bangladesh", "2016-2019", "Merit-based scholarship for academic excellence in the 1st and 4th year.\\vspace{1.25mm}"
+  
+  
+) %>% 
+brief_entries(glue::glue("\\textbf{<award>}: <organisation>, <country>  \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE)
+```
+
+# References
+\footnotesize
+\vspace{-2mm} 
+
+```{r reference}
+tribble(
+  ~ role, ~ organizer, ~ loc, ~ dates, ~ details,
+"Assistant Professor, Dept. of Biochemistry and Molecular Biology", "Tanvir Hossain", "Sylhet, Bangladesh", "SUST",  
+    list(
+      paste0("\\hspace*{-0.37cm} PhD Candidate, Australian Institute for Bioengineering and Nanotechnology\\\\",
+             "\\hspace*{-0.37cm} The University of Queensland, Brisbane, Australia\\\\",
+             "\\hspace*{-0.37cm} Email: tanvir-bmb@sust.edu")
+    ),
+  # "Associate Professor, Dept. of Biochemistry and Molecular Biology", "Ajit Ghosh,PhD", "Sylhet, Bangladesh", "SUST", 
+  #   list(
+  #     paste0("\\hspace*{-0.37cm} Email: aghosh-bmb@sust.edu")
+  #   ),
+
+"Senior Scientific Officer, Bioinformatics Division", "Mohammad Uzzal Hossain", "Dhaka, Bangladesh", "National Institute of Biotechnology(NIB)", 
+    list(
+      paste0("\\hspace*{-0.37cm} MSc, Oxford University\\\\",
+             "\\hspace*{-0.37cm} Email: uzzal.nib.edu")
+    ),
+  
+"Scientist", "Dr Yogesh Hooda", "Dhaka, Bangladesh", "CHRF",
+    list(
+      paste0("\\hspace*{-0.37cm} Post-doc, MRC lab-Cambridge University\\\\",
+             # "\\hspace*{-0.37cm} PhD, University of Torrento, Canada\\\\",
+             "\\hspace*{-0.37cm} Email: yhooda@chrfbd.org")
+    )
+)%>% 
+  detailed_entries(role, dates, organizer, loc, details)
+
+```
+<!-- # Problem Solving  -->
+
+<!-- ```{r problem} -->
+<!-- tribble( -->
+<!--   ~ host,  ~ url,  ~ dates, ~ details, -->
+<!--   "Rosalind", "https://rosalind.info/users/Preonath/",  "June 2018 - Present", "6th Position from Bangladesh" -->
+<!--   "HackerRank", "https://www.hackerrank.com/profile/preonath2838",  "2018", "Total Hackos: 357", -->
+
+<!--   "CodingBat", "https://codingbat.com/python",  "April 2020", "Count:53", -->
+
+<!--   "Leetcode", "https://leetcode.com/Preonath/",  "2022 - Present", "Rank 1761864", -->
+<!-- ) %>%  -->
+<!--   brief_entries(glue::glue("\\textbf{{\\href{{<url>}}{{<host>}}}}: \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE) -->
+
+
+<!-- ``` -->
+
+
+
+
+<!-- # Volunteering Experience -->
+
+<!-- ```{r volunteering} -->
+<!--  tribble( -->
+<!--    ~ role, ~ organization, ~ loc, ~ dates, ~ details, -->
+
+<!--     # "Academic Team Member", "Bangladesh Mathematical Olympiad", "Dhaka, Bangladesh", "2018-2021", -->
+<!--     #  list("Engaged in evaluating examination papers and overseeing exam hall activities to ensure a smooth conduct of the Olympiad" -->
+<!--     #       ), -->
+<!-- # "Academic Team Member", "Bangladesh Physics Olympiad", "Dhaka, Bangladesh", "2021", -->
+<!-- #      list("Tasked with the assessment of solutions and maintaining order among candidates during the Olympiad competitions" -->
+<!-- #     ), -->
+
+<!-- # "Academic Team Member", "Bangladesh Olympiad on Astronomy and Astrophysics", "Dhaka, Bangladesh", "2021", -->
+<!-- #      list("Played a crucial role in monitoring examination procedures and providing assistance to participants throughout the event." -->
+<!-- #     ), -->
+<!--      "ENZYME", "Bangladesh Biology Olympiad ", "Dhaka, Bangladesh", "2021", -->
+<!--      list("Assisted in the evaluation process and managed the exam hall logistics to facilitate a fair and efficient Olympiad" -->
+<!--     ), -->
+<!--     #  "General Executive Member", "Copernicus Astronomical Memorial of SUST", "Dhaka, Bangladesh", "2021", -->
+<!--     #  list("Participated in and directed several outreach programs aimed at educating the public about astronomy and piqueing students' interest in the subject.", -->
+<!--     #  "Facilitated a better understanding and enjoyment of astronomy by organizing and judging competitions in which students presented projects they had worked on." -->
+<!--     # ), -->
+<!-- #     "General Member", "SUST Science Arena", "Dhaka, Bangladesh", "2021", -->
+<!-- #      list("Organize conferences, seminers, science fairs, quiz competitions, science weeks, social activities" -->
+<!-- #     ), -->
+<!-- "Mentor", "Bioinformatics School", "Dhaka, Bangladesh", "2021", -->
+<!--      list("Solve the different kinds of bioinformatics related problem of the group members" -->
+<!--     ), -->
+<!-- ) %>% -->
+<!--   detailed_entries(role, dates, organization, loc, details) -->
+<!-- ``` -->
+
+
+
+

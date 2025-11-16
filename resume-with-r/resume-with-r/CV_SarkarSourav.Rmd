@@ -1,0 +1,192 @@
+---
+# name: Sourav
+surname: Sourav Sarker
+# position: "Software Engineer"
+address: "\\tiny Dhaka, Bangladesh"
+email: "sourav39.dev@gmail.com"
+www: iamsourav.site
+# phone: "+880-1765-651957"
+linkedin: sourav-sarker-6a9029b8
+mylocation: Bangladesh
+github: sarker39
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv
+linkcolor: red
+urlcolor: red
+citecolor: red
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+library(kableExtra)
+knitr::opts_chunk$set(echo = FALSE)
+```
+# Objective
+\footnotesize
+\vspace{.2mm} 
+Having a colorful footprint in software engineering spanning over six years, I have cultivated a robust
+skill set that includes clean coding, system design, settling R&Ds and debugging abilities; also, my
+commitment to problem-solving is demonstrated through successful project completions. Now, I am
+fueled by an unwavering passion for delving into challenging research topic which makes me an ideal
+candidate for contributing in research.
+
+
+# Education
+\footnotesize
+\vspace{-2mm} 
+```{r education2}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Bachelor of Science in Computer Science & Engineering", "Shahjalal University of Science & Technology", "Sylhet, Bangladesh", "Mar 2015 — Feb 2019",
+    list(
+      paste0("{\\textbf{CGPA: 3.28 / 4.00}}\\\\")
+    )
+) %>%
+  detailed_entries(degree, dates, uni, loc, details)
+```
+# Work Experience
+\footnotesize
+\scriptsize
+\vspace{-2mm}
+
+```{r work_experience}
+tribble(
+  ~ role, ~ organization, ~ loc, ~ dates, ~ details,
+  
+  "Software Engineer (Team Lead)", "SELISE Digital Platform", "Dhaka, Bangladesh", "Apr 2020 — Present",
+    list(
+      paste0("{\\textbf{Acting as a team lead:}}\\\\",
+             "\\hspace*{0.5cm}- Led an engineering team of 4 in developing a Fintech software, generating close to CHF 1 million annually for the company.\\\\", 
+             "\\hspace*{0.5cm}- Worked within a tech team on a Swiss platform for insurance, pension, and broker sectors, enabling secure communication and data exchange.\\\\", 
+             "\\hspace*{0.5cm}- Contributed to the platform's plans to expand into a community-driven marketplace for third-party services and industry digitalization.\\\\", 
+             "\\hspace*{-0.28cm}•\\,\\, 
+             {\\textbf{Acting as a full-stack dev:}}\\\\",
+             "\\hspace*{0.5cm}- Working on a scalable application designed to manage complete financial activities, assets, and plans for Swiss citizens."),
+            "\\vspace{1mm}"
+    ),
+  
+  "Junior Software Engineer", "Secure Link Services Ltd.", "Dhaka, Bangladesh", "Apr 2019 — Mar 2020",
+    list(
+      paste0("\\hspace*{0.5cm}- Worked on a report generation tool that optimized the yearly business process for shareholders.\\\\",
+             "\\hspace*{0.5cm}- Worked on a report generation tool that optimized the yearly business process for shareholders.\\\\", 
+             "\\hspace*{0.5cm}- Developed a project management system similar to Trello, using MongoDB, Node.js, and Socket.io.")
+    )
+) %>%
+  detailed_entries(role, dates, organization, loc, details)
+
+```
+\vspace{4mm}
+# Research Experience
+\scriptsize
+\vspace{-2.4mm}
+
+```{r research_experience}
+tribble(
+  ~ role, ~ organization, ~ loc, ~ dates, ~ responsibilities,
+  
+  "Research Assistant", 
+  "Department of Computer Science & Engineering, SUST", 
+  "Sylhet, Bangladesh", 
+  "Jan 2018 - Feb 2019",
+    list(
+  "\\begingroup\\leftskip=6mm Collaborated with a team of researchers on a project focused on building a factoid question answering system in Bengali.",
+  "Collected and preprocessed datasets from various sources, ensuring data quality and integrity.",
+  "Implemented and fine-tuned NLP models using open-source machine learning libraries.",
+  "Conducted literature reviews to identify relevant research, contributing insights to project strategy.",
+  "Assisted in designing and conducting experiments, analyzing results, and presenting findings during weekly team meetings.",
+  "Presented research progress at a regional NLP conference via poster presentation and published two papers.",
+  "\\endgroup \\vspace{2mm}"
+    ),
+  
+  "Executive Member", 
+  "SUST Natural Language Processing Lab", 
+  "Sylhet, Bangladesh", 
+  "July 2018 - June 2019",
+    list(
+      "\\begingroup\\leftskip=6mm Collaborated with a multidisciplinary team to build a Named Entity Recognition (NER) model for the Bengali search engine 'Pipilika'.",
+      "Assisted in experimental design, conducted empirical evaluations, and analyzed results to refine model performance.",
+      "Participated in workshops and seminars arranged by the SUST NLP Lab to stay updated with advancements in NLP and machine learning.","\\endgroup"
+      
+    )
+) %>% 
+  detailed_entries(role, dates, organization, loc, responsibilities)
+```
+
+# Publications
+\vspace{-2.4mm} 
+
+- Sarker, S., **"Bengali Question Answering System for Factoid Questions: A statistical approach,"** \textit{2019 2nd International Conference on Bangla Speech and Language Processing (ICBSLP)}, Sylhet, Bangladesh, 2019, pp. 1-5. \href{https://doi.org/10.1109/ICBSLP47725.2019.201512}{\textbf{doi: 10.1109/ICBSLP47725.2019.201512}}.
+
+- Sarker, S., **"Classification of Bengali Questions Towards a Factoid Question Answering System,"** \textit{2019 1st International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT)}, Dhaka, Bangladesh, 2019, pp. 1-5. \href{https://doi.org/10.1109/ICASERT.2019.8934567}{\textbf{doi: 10.1109/ICASERT.2019.8934567}}.
+
+# Technical Skills
+\footnotesize
+\scriptsize
+\vspace{-4mm} 
+
+- **Languages:** C, C#, Python, JavaScript, MATLAB
+- **Frameworks:** Dotnet, Angular
+- **Database Management Systems:** SQL, NoSQL, Redis
+- **Data Analysis & Machine Learning:** Proficient in various frameworks and techniques: Numpy, Pandas, Matplotlib, Keras, SciKit-Learn, TensorFlow
+- **Tools:** Git, Jupyter Notebook, Visual Studio, Visual Studio Code, MS Office
+- **Web Development:** Full stack development experience, including project management
+- **Project Management:** Experience leading engineering teams and utilizing Agile methodologies in software development
+
+
+
+# Achievements
+
+\footnotesize
+\vspace{.2mm} 
+\scriptsize
+```{r accomplishment}
+library(dplyr)
+library(tibble)
+library(glue)
+
+tribble(
+  ~ award,  ~ organisation, ~ country, ~ dates, ~ details,
+  
+  "\\textbf{\\textit{Best Poster Award}}", 
+    "International Conference on Bangla Speech and Language Processing (ICBSLP-2018)", 
+    "Sylhet, Bangladesh", 
+    "2018", 
+    "Awarded in the poster presentation segment. \\vspace{1.25mm}",
+  
+  "\\textbf{\\textit{Runner-up}} (Twice)", 
+    "Bangladesh Mathematical Olympiad (BdMO) - Secondary Level",  
+    "Bangladesh", 
+    "2010 \\newline 2012", 
+    "Secured runner-up position twice in the regional phase. \\vspace{1.25mm}",
+  
+  "\\textbf{\\textit{Champion}}", 
+    "National Earth Olympiad (NEO) arranged by BYEI", 
+    "Bangladesh", 
+    "2013", 
+    "Achieved the champion title in the National Earth Olympiad.\\vspace{1.25mm}"
+  
+) %>% 
+  brief_entries(
+    glue::glue("<award>: <organisation>, <country> \\newline <details>", .open = "<", .close = ">"), 
+    paste0(dates, "\\newline"), 
+    .protect = FALSE
+  )
+```
+
+
+# Test Scores
+
+\footnotesize
+\vspace{-4mm} 
+- **IELTS:** Overall Band 6.5 (No band less than 6.0)
+
+# Language
+\footnotesize
+\vspace{-4mm} 
+- English (Fluent) - Bengali (Native) - Hindi (Intermediate)
+
+
+
